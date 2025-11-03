@@ -21,7 +21,7 @@ npm install
 
 File **`.env`** menyimpan konfigurasi penting untuk server dan keamanan:
 
-| Variabel | Deskripsi | Nilai Anda |
+| Variabel | Deskripsi | Nilai  |
 | :--- | :--- | :--- |
 | `JWT_SECRET` | Kunci rahasia untuk menandatangani dan memverifikasi JWT. **Kunci ini harus diubah!** | `kunci_rahasia_super_aman_untuk_tugas` |
 | `PORT` | Port di mana server Express akan berjalan. | `3000` |
@@ -102,4 +102,5 @@ npm start
 * **Header:** Token JWT yang diperoleh dari login disertakan dalam *header* `Authorization` dengan format **`Bearer <Token>`**.
 * **Status:** `200 OK`.
 * **Respons:** Akses berhasil diberikan karena token valid. Respons mengembalikan data pengguna (`id: 1, username: "aska"`) yang diekstrak dari *payload* JWT oleh *middleware*.
+
 
